@@ -31,7 +31,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 regr = RandomForestRegressor(random_state=42)
 regr.fit(X,y)
 
-bot = telebot.TeleBot('5596921536:AAGbfPLqGhSjKVE8Py844nuK8iOemfmregc')
+bot = telebot.TeleBot('*APIKEY*')
 @bot.message_handler(commands=['start'])
 def start(m, res=False):
     bot.send_message(m.chat.id, 'Привет! Если хочешь узнать свой психологический ммр - напиши "Котча"')
